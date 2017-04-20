@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 2
+  domain: mybluemix.net
+  name: JCloudantM
+  host: JCloudantM
+  disk_quota: 1024M
+  services:
+  - JCloudantM-cloudantNoSQLDB
+  - availability-monitoring-auto
